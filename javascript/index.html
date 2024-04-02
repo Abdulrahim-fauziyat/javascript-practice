@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js window</title>
+    <link rel="stylesheet" href="css/css.css">
+  
+</head>
+<body>
+  <div class="hr"></div>
+   
+  <div class="vr"></div>
+
+
+ <!-- <script src="jsclass.js"></script> -->
+<script>
+// console.log(window)
+
+ const body =document.querySelector('body');
+    
+ document.onmouseenter = function () {
+  console.log("mouser has moved into the body")
+ };
+
+
+ let el =document.querySelector('.hr');
+ let el2 =document.querySelector('.vr');
+
+ document.onmousemove = function (e){
+  console.log(` ClientsX ${e.clientX}, ClientsY ${e.clientY} `);
+  console.log(` PageX ${e.pageX}, pageY ${e.pageY} `);
+
+  //  el.id ="hr";
+  //  el.style.width ='100vh';
+  //  el.style.border = '1px solid black';
+  //  el.style.position ='relative';
+   el.style.left = e.clientX + 'px';
+   el.style.top = e.clientY + 'px';
+
+  //  el2.style.height ='100vh';
+  //  el2.style.border = '1px solid red';
+  //  el2.style.position ='relative';
+   el2.style.top = e.clientY + 'px';
+   el2.style.left = e.clientX + 'px';
+
+  //  document.body.appendChild(el);
+  
+
+ };
+
+
+
+
+</script>
+</body>
+</html>

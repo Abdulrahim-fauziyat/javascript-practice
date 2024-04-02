@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Github repo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-body-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">My GitHub repo</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2  form-control-lg" type="search" placeholder="Git hub Username" aria-label="Search">
+            <button class="btn btn-outline-success btn-lg" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <!-- <div class="card my-3" style="max-width: 70%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </div>
+
+      <script>
+
+
+    
+
+          //create a function to make api request to github
+          // const loadMyRepo =function(Username){
+              
+          //     const apiUrl =`https://api.github.com/users/NnaDid/repos`;
+          //     fetch(apiUrl).then(()=>{
+          //       if(!response.ok){
+          //           throw new Error (`HTTP err! status: ${response.status}`)
+        //         }
+        //         return response.json();
+        //       }).then((data)=>{
+        //         console.log(data);
+        //       }); 
+        // }
+
+
+const loadUser =async (u)=>{
+  const apiUrl =`https://api.github.com/users/NnaDid/repos`;
+  // const res=await fetch (apiUrl);
+  // const data=await res
+
+  try{
+    const res=await fetch (apiUrl);
+   const data=await res.json();
+   console.log(data);
+  } catch (error){
+    console.error(error);
+
+  }finally{ console.log
+
+  }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter 2.0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <form>
+            <p>
+                <select name="basecurrencyAmount" class="basecurrencyAmount">
+                    <option value="">Input value</option>
+                    <option value="€">€</option>
+                    <option value="$">$</option>
+                    <option value="£">£</option>
+                    <option value="¥">¥</option>
+                    <option value="₦">₦</option>
+                </select>
+                <input type="number" class="basecurrency">
+            </p>
+        </form>
+        <button id="convertbtn">Click to convert!</button>
+        <form>
+            <p>
+                <select name="targetcurrencyAmount" class="targetcurrencyAmount">
+                    <option value="">Display result</option>
+                    <option value="€">€</option>
+                    <option value="$">$</option>
+                    <option value="£">£</option>
+                    <option value="¥">¥</option>
+                    <option value="₦">₦</option>
+                </select>
+                <input type="number" class="targetcurrency">
+            </p>
+        </form>
+    </main>
+
+    <script src="jav.js"></script>
+</body>
+</html>
